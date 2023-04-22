@@ -7,7 +7,7 @@ pipeline {
       }
     }
      stage('git pul'){
-      step {
+      steps {
       sh "git pull"
      }
     }
