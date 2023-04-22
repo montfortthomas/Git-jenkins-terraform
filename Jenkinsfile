@@ -9,8 +9,9 @@ pipeline {
      stage('git pul'){
       steps {
         sh "git pull --set-upstream origin main"
+        sh "git push"
         sh "ls"
-        sh "sudo mv ec2.tf /root/"
+       
         sh "pwd"
         sh "ls"
         sh "terraform-version"
