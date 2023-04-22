@@ -10,6 +10,8 @@ pipeline {
       steps {
         sh "git pull --set-upstream origin main"
         sh "ls"
+        sh "cd"
+        sh "pwd"
         sh "terraform-version"
         //sh "terraform init"
      }
