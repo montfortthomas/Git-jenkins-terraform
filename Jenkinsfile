@@ -9,13 +9,9 @@ pipeline {
      stage('git pul'){
       steps {
         sh "git pull --set-upstream origin main"
-        sh "git push /usr/bin/"
-        sh "ls"
-       
-        sh "pwd"
-        sh "ls"
-        sh "terraform-version"
-        //sh "terraform init"
+        
+        //sh "terraform-version"
+        sh "terraform init"
      }
     }
   }
