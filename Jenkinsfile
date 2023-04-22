@@ -8,7 +8,7 @@ pipeline {
     }
      stage('git pul'){
       steps {
-      sh "git pull"
+      sh "sh "git pull --set-upstream origin main"
      }
     }
   }
